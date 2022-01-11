@@ -3,7 +3,7 @@ name: send_mail
 runner_type: python-script
 description: send mail to others.
 enabled: true
-entry_point: send_mail2.py
+entry_point: send_mail.py
 parameters:
   smtpServer:
     type: string
