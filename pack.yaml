@@ -1,0 +1,13 @@
+---
+ref: send_email
+name : send_email
+description :  E-Mail Actions/Sensors for StackStorm
+keywords:
+  - send_email
+  - messaging
+  - smtp
+version: 1.0.0
+python_versions:
+  - "3"
+author : mwhy, Inc.
+email : mwuhongying@163.com

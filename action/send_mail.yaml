@@ -1,0 +1,27 @@
+---
+name: send_mail
+runner_type: python-script
+description: send mail to others.
+enabled: true
+entry_point: send_mail2.py
+parameters:
+  smtpServer:
+    type: string
+    description: Set up a mailbox server, for example "smtp.qq.com".
+    required: true
+  mail_pass:
+    type: string
+    description: Email authorization code.
+    required: true
+  sender:
+    type: string
+    description: Sender email.
+    required: true
+  receivers:
+    type: string
+    description: receivers email.
+    required: true
+  mail_body:
+    type: string
+    description: email content.
+    required: true
