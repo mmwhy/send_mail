@@ -1,6 +1,6 @@
 ---
-ref: send_email
-name : send_email
+ref: send_mail
+name : send_mail
 description :  E-Mail Actions/Sensors for StackStorm
 keywords:
   - send_email
