@@ -8,12 +8,12 @@ class SendMailAction(Action):
         message = MIMEText(mail_body, 'plain', 'utf-8')  # 邮件正文
         message['From'] = sender  # 邮件上显示的发件人
         message['To'] = receiver  # 邮件上显示的收件人
-        message['Subject'] = Header(mail_title, 'utf-8')  # 邮件主题
+        message['Subject'] = Header("系统报错", 'utf-8')  # 邮件主题
 
         try:
             smtp = smtplib.SMTP()  # 创建一个连接
             smtp.connect(smtpServer)  # 连接发送邮件的服务器
-            smtp.login(username, password)  # 登录服务器
+            smtp.login(sender, password)  # 登录服务器
             smtp.sendmail(sender, receiver, message.as_string())  # 填入邮件的相关信息并发送
             print("邮件发送成功！！！")
             smtp.quit()
