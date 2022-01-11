@@ -1,6 +1,9 @@
+import os
+from st2common.runners.base_action import Action
 import smtplib
 from email.header import Header  # 用来设置邮件头和邮件主题
 from email.mime.text import MIMEText  # 发送正文只包含简单文本的邮件，引入MIMEText即可
+
 class SendMailAction(Action):
     def send(self,smtpServer,password,sender,receiver,mail_body):
 
