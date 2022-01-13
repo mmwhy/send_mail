@@ -17,7 +17,7 @@ parameters:
     type: string
     description: Sender email.
     required: true
-  receivers:
+  receiver:
     type: string
     description: receivers email.
     required: true
