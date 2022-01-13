@@ -4,8 +4,11 @@ import smtplib
 from email.header import Header  # 用来设置邮件头和邮件主题
 from email.mime.text import MIMEText  # 发送正文只包含简单文本的邮件，引入MIMEText即可
 
+__all__ = [
+    'SendMailAction'
+]
 class SendMailAction(Action):
-    def send(self,smtpServer,password,sender,receiver,mail_body):
+    def run(self,smtpServer,password,sender,receiver,mail_body):
 
         # 创建一个实例
         message = MIMEText(mail_body, 'plain', 'utf-8')  # 邮件正文
