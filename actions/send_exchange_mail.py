@@ -4,12 +4,7 @@ import win32com.client as win32
 __all__ = [
     'SendExchangeMailAction'
 ]
-receiver='2920405578@qq.com'
-subject='Mail Test'
-HTMLBody='''
-        <H2>Hello, This is a test mail.</H2>
-        Hello Guys. 
-        '''
+
 class SendExchangeMailAction(Action):
 
     def run(self,receiver,subject,HTMLBody):
