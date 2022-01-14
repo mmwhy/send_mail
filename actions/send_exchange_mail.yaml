@@ -1,0 +1,19 @@
+---
+name: send_exchange_mail
+runner_type: python-script
+description: send outlook mail to others.
+enabled: true
+entry_point: send_exchange_mail.py
+parameters:
+  receiver:
+    type: string
+    description: receivers email.
+    required: true
+  subject:
+    type: string
+    description: subject of email.
+    required: true
+  HTMLBody:
+    type: string
+    description: email content.
+    required: true
